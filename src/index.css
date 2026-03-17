@@ -1,0 +1,94 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --page-bg:      #0d1117;
+  --header-bg:    rgba(13,17,23,0.92);
+  --header-bdr:   #30363d;
+  --header-title: #e6edf3;
+  --header-sub:   #8b949e;
+  --surface:      #161b22;
+  --surface2:     #0d1117;
+  --surface3:     #1c2128;
+  --surface4:     #21262d;
+  --surface5:     #21262d;
+  --hover-bg:     #21262d;
+  --border-c:     #30363d;
+  --bw:           1px;
+  --text:         #e6edf3;
+  --text2:        #8b949e;
+  --text3:        #484f58;
+  --ph-color:     #484f58;
+  --shadow-md:    none;
+  --shadow-sm:    none;
+  --shadow-xs:    none;
+  --hover-tf:     none;
+  --press-tf:     none;
+  --tab-nav:      #161b22;
+  --tab-active:   #0d1117;
+  --tab-inactive: #161b22;
+  --tab-bdr-bot:  #0d1117;
+  --modal-bg:     rgba(1,4,9,0.82);
+  --modal-surface:#161b22;
+  --modal-bdr:    #30363d;
+  --close-bg:     #21262d;
+  --close-text:   #8b949e;
+  --close-hover:  #30363d;
+  --loader-track: #21262d;
+  --loader-spin:  #4b9cd3;
+  --scrbar-track: transparent;
+  --scrbar-thumb: #30363d;
+  --scrbar-hover: #484f58;
+  --title-shadow: none;
+  --accent:       #4b9cd3;
+  --accent-light: #79b8e0;
+  --accent-dim:   #1a3650;
+  --accent-glow:  rgba(75,156,211,0.12);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+html { background: var(--page-bg); }
+
+body {
+  background: var(--page-bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--scrbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrbar-thumb); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrbar-hover); }
+
+input::placeholder { color: var(--ph-color); }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.pokeball-loader {
+  width: 22px;
+  height: 22px;
+  border: 3px solid var(--loader-track);
+  border-top-color: var(--loader-spin);
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+  flex-shrink: 0;
+}
+
+button { font-family: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
