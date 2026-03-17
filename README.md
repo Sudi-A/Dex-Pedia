@@ -8,9 +8,12 @@ Pokémon data is spread across wikis, fan sites, and official sources that are c
 
 ## The Solution
 
-Dex Pedia pulls data directly from the PokéAPI to create a complete, searchable Pokémon encyclopedia covering all 1,302 Pokémon across Generations I–IX. Users can browse and filter by name, Pokédex number, or type, and click into any Pokémon for a full detail view covering stats, abilities, moves, breeding, and evolution chains — all in one focused interface.
+Dex Pedia pulls data directly from the PokéAPI to create a complete, searchable Pokémon encyclopedia covering all 1,302 Pokémon across Generations I–IX. Users can browse and filter by name, Pokédex number, or type, and click into any Pokémon for a full detail view covering stats, abilities, moves, breeding, and evolution chains - all in one focused interface.
 
 ## Tech Stack
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
